@@ -2,30 +2,41 @@
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>法律条款 · AI 百宝箱</title><style>
-:root{--ink:#1a1d21;--ink2:#4a5058;--ink3:#878d95;--line:#e8eaed;--brand:#24508f}
+:root{--ink:#14161c;--ink2:#3d4453;--line:#e8eaed;--brand:#0a59f7;--warn:#b45309}
 *{box-sizing:border-box}
-body{margin:0;background:#fbfbfc;color:var(--ink);
-  font:400 15px/1.75 -apple-system,"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei",sans-serif;
-  -webkit-font-smoothing:antialiased}
-.wrap{max-width:720px;margin:0 auto;padding:56px 24px 96px}
-h1{font-size:26px;line-height:1.35;margin:0 0 6px;letter-spacing:-.2px}
-.meta{font-size:12.5px;color:var(--ink3);margin-bottom:36px}
-h2{font-size:15.5px;margin:34px 0 10px;color:var(--brand);font-weight:600;letter-spacing:.1px}
-p{margin:0 0 12px;color:var(--ink2)}
-.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:0 0 12px;
-  display:block;text-decoration:none;color:inherit;transition:.15s}
-.card:hover{border-color:#c8d3e3;transform:translateY(-1px)}
-.card b{display:block;font-size:15px;margin-bottom:3px}
-.card span{font-size:12.5px;color:var(--ink3)}
-.foot{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink3)}
-a{color:var(--brand)}
+body{margin:0;background:#fff;color:#14161c;
+  font:400 16px/1.8 -apple-system,"PingFang SC","HarmonyOS Sans SC",sans-serif}
+.wrap{max-width:660px;margin:0 auto;padding:40px 24px 80px}
+h1{font-size:28px;line-height:1.3;margin:0 0 8px;letter-spacing:-.3px}
+.meta{font-size:13px;color:#878d95;margin-bottom:28px}
+
+/* 目录 */
+.toc{background:#f7f8fa;border-radius:12px;padding:16px 20px;margin:0 0 36px}
+.toc-title{font-size:13px;color:#878d95;margin-bottom:10px;font-weight:500}
+.toc a{display:block;padding:7px 0;font-size:15px;color:#0a59f7;text-decoration:none;line-height:1.5}
+.toc a:hover{text-decoration:underline}
+
+/* 章节 */
+section{border-top:1px solid #eef0f3;padding-top:28px;margin-top:32px}
+section:first-of-type{border-top:none;padding-top:0;margin-top:0}
+h2{font-size:19px;line-height:1.45;margin:0 0 14px;font-weight:600;color:#14161c;
+   scroll-margin-top:20px}
+h2 .num{color:#0a59f7;margin-right:6px}
+p{margin:0 0 14px;color:#3d4453;line-height:1.85}
+p:last-child{margin-bottom:0}
+strong{color:#14161c;font-weight:600}
+
+/* 强调块：用于「不收集数据」这类关键结论 */
+.key{background:#f0f6ff;border-left:3px solid #0a59f7;padding:12px 16px;
+  border-radius:0 8px 8px 0;margin:0 0 16px;color:#1a2b4a}
+.key p{margin:0;color:#1a2b4a}
+
+.foot{margin-top:56px;padding-top:20px;border-top:1px solid #eef0f3;
+  font-size:13px;color:#878d95;line-height:1.7}
+.foot a{color:#0a59f7}
+@media(max-width:480px){.wrap{padding:28px 18px 60px}h1{font-size:24px}h2{font-size:17px}}
 </style></head>
 <body><div class="wrap">
-<h1>法律条款</h1><div class="meta">AI 百宝箱 · 版本 v8</div>
-<a class="card" href="terms.html"><b>用户协议</b><span>查看全文</span></a>
-<a class="card" href="privacy.html"><b>隐私政策</b><span>查看全文</span></a>
-<a class="card" href="ai.html"><b>AI 生成内容说明</b><span>查看全文</span></a>
-<a class="card" href="member.html"><b>会员服务协议</b><span>查看全文</span></a>
-<a class="card" href="contact.html"><b>联系与举报</b><span>查看全文</span></a>
-<div class="foot">AI 百宝箱 · 本页版本 v8 · 如有疑问请联系 <a href="mailto:support@prismbox.tools">support@prismbox.tools</a></div>
+<h1>法律条款</h1><div class="meta">AI 百宝箱 · 版本 v8</div><a class="toc" style="display:block;text-decoration:none;color:inherit" href="terms.html"><div class="toc-title">查看全文</div><div style="font-size:17px;color:#0a59f7">用户协议</div></a><a class="toc" style="display:block;text-decoration:none;color:inherit" href="privacy.html"><div class="toc-title">查看全文</div><div style="font-size:17px;color:#0a59f7">隐私政策</div></a><a class="toc" style="display:block;text-decoration:none;color:inherit" href="ai.html"><div class="toc-title">查看全文</div><div style="font-size:17px;color:#0a59f7">AI 生成内容说明</div></a><a class="toc" style="display:block;text-decoration:none;color:inherit" href="member.html"><div class="toc-title">查看全文</div><div style="font-size:17px;color:#0a59f7">会员服务协议</div></a><a class="toc" style="display:block;text-decoration:none;color:inherit" href="contact.html"><div class="toc-title">查看全文</div><div style="font-size:17px;color:#0a59f7">联系与举报</div></a>
+<div class="foot">AI 百宝箱 · 版本 v8<br>如有疑问请联系 <a href="mailto:support@prismbox.tools">support@prismbox.tools</a></div>
 </div></body></html>

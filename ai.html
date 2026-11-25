@@ -2,36 +2,41 @@
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AI 生成内容说明 · AI 百宝箱</title><style>
-:root{--ink:#1a1d21;--ink2:#4a5058;--ink3:#878d95;--line:#e8eaed;--brand:#24508f}
+:root{--ink:#14161c;--ink2:#3d4453;--line:#e8eaed;--brand:#0a59f7;--warn:#b45309}
 *{box-sizing:border-box}
-body{margin:0;background:#fbfbfc;color:var(--ink);
-  font:400 15px/1.75 -apple-system,"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei",sans-serif;
-  -webkit-font-smoothing:antialiased}
-.wrap{max-width:720px;margin:0 auto;padding:56px 24px 96px}
-h1{font-size:26px;line-height:1.35;margin:0 0 6px;letter-spacing:-.2px}
-.meta{font-size:12.5px;color:var(--ink3);margin-bottom:36px}
-h2{font-size:15.5px;margin:34px 0 10px;color:var(--brand);font-weight:600;letter-spacing:.1px}
-p{margin:0 0 12px;color:var(--ink2)}
-.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:0 0 12px;
-  display:block;text-decoration:none;color:inherit;transition:.15s}
-.card:hover{border-color:#c8d3e3;transform:translateY(-1px)}
-.card b{display:block;font-size:15px;margin-bottom:3px}
-.card span{font-size:12.5px;color:var(--ink3)}
-.foot{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink3)}
-a{color:var(--brand)}
+body{margin:0;background:#fff;color:#14161c;
+  font:400 16px/1.8 -apple-system,"PingFang SC","HarmonyOS Sans SC",sans-serif}
+.wrap{max-width:660px;margin:0 auto;padding:40px 24px 80px}
+h1{font-size:28px;line-height:1.3;margin:0 0 8px;letter-spacing:-.3px}
+.meta{font-size:13px;color:#878d95;margin-bottom:28px}
+
+/* 目录 */
+.toc{background:#f7f8fa;border-radius:12px;padding:16px 20px;margin:0 0 36px}
+.toc-title{font-size:13px;color:#878d95;margin-bottom:10px;font-weight:500}
+.toc a{display:block;padding:7px 0;font-size:15px;color:#0a59f7;text-decoration:none;line-height:1.5}
+.toc a:hover{text-decoration:underline}
+
+/* 章节 */
+section{border-top:1px solid #eef0f3;padding-top:28px;margin-top:32px}
+section:first-of-type{border-top:none;padding-top:0;margin-top:0}
+h2{font-size:19px;line-height:1.45;margin:0 0 14px;font-weight:600;color:#14161c;
+   scroll-margin-top:20px}
+h2 .num{color:#0a59f7;margin-right:6px}
+p{margin:0 0 14px;color:#3d4453;line-height:1.85}
+p:last-child{margin-bottom:0}
+strong{color:#14161c;font-weight:600}
+
+/* 强调块：用于「不收集数据」这类关键结论 */
+.key{background:#f0f6ff;border-left:3px solid #0a59f7;padding:12px 16px;
+  border-radius:0 8px 8px 0;margin:0 0 16px;color:#1a2b4a}
+.key p{margin:0;color:#1a2b4a}
+
+.foot{margin-top:56px;padding-top:20px;border-top:1px solid #eef0f3;
+  font-size:13px;color:#878d95;line-height:1.7}
+.foot a{color:#0a59f7}
+@media(max-width:480px){.wrap{padding:28px 18px 60px}h1{font-size:24px}h2{font-size:17px}}
 </style></head>
 <body><div class="wrap">
-<h1>AI 生成内容说明</h1><div class="meta">最近更新：2026 年 11 月 · 版本 v8</div>
-<h2>1. 内容性质</h2>
-<p>本应用的输出由生成式人工智能产生，属于《人工智能生成合成内容标识办法》所称的人工智能生成合成内容，不是真实拍摄的照片。用人像做换装合成，也属于《互联网信息服务深度合成管理规定》所称的深度合成服务。</p>
-<h2>2. 标识在哪里</h2>
-<p>· 效果图生成时就在图片右下角画入「AI 生成」字样，并在文件内部写入一段生成说明；</p>
-<p>· 应用内的记录缩略图、效果预览、大图查看，以及保存到相册和分享出去的图片，用的都是这张带标识的成品图，标识不会被界面留白挤到画面外；</p>
-<p>· 你自己添加的人像照不带标识——它不是 AI 生成的；</p>
-<p>· 你配置的生成模型可能另带一行很淡的水印，那是服务商加的，与本应用的标识相互独立。</p>
-<h2>3. 不得做的事</h2>
-<p>不得删除、遮挡、篡改、伪造上述标识，不得把生成结果说成真实照片，不得用它冒充他人。发布到社交平台或用于商业内容时，应主动声明该内容由 AI 生成。</p>
-<h2>4. 关于肖像</h2>
-<p>用他人的脸生成形象，即使只是「试试看」，也可能构成对他人肖像权的侵害。请只使用你自己的照片，或已获得书面授权的照片。</p>
-<div class="foot">AI 百宝箱 · 本页版本 v8 · 如有疑问请联系 <a href="mailto:support@prismbox.tools">support@prismbox.tools</a></div>
+<h1>AI 生成内容说明</h1><div class="meta">最近更新：2026 年 11 月 · 版本 v8</div><div class="toc"><div class="toc-title">目录</div><a href="#s0">1. 内容性质</a><a href="#s1">2. 标识在哪里</a><a href="#s2">3. 不得做的事</a><a href="#s3">4. 关于肖像</a></div><section><h2 id="s0"><span class="num">1.</span>内容性质</h2><p>本应用的输出由生成式人工智能产生，属于《人工智能生成合成内容标识办法》所称的人工智能生成合成内容，不是真实拍摄的照片。用人像做换装合成，也属于《互联网信息服务深度合成管理规定》所称的深度合成服务。</p></section><section><h2 id="s1"><span class="num">2.</span>标识在哪里</h2><p>· 效果图生成时就在图片右下角画入「AI 生成」字样，并在文件内部写入一段生成说明；</p><p>· 应用内的记录缩略图、效果预览、大图查看，以及保存到相册和分享出去的图片，用的都是这张带标识的成品图，标识不会被界面留白挤到画面外；</p><p>· 你自己添加的人像照不带标识——它不是 AI 生成的；</p><p>· 你配置的生成模型可能另带一行很淡的水印，那是服务商加的，与本应用的标识相互独立。</p></section><section><h2 id="s2"><span class="num">3.</span>不得做的事</h2><p>不得删除、遮挡、篡改、伪造上述标识，不得把生成结果说成真实照片，不得用它冒充他人。发布到社交平台或用于商业内容时，应主动声明该内容由 AI 生成。</p></section><section><h2 id="s3"><span class="num">4.</span>关于肖像</h2><p>用他人的脸生成形象，即使只是「试试看」，也可能构成对他人肖像权的侵害。请只使用你自己的照片，或已获得书面授权的照片。</p></section>
+<div class="foot">AI 百宝箱 · 版本 v8<br>如有疑问请联系 <a href="mailto:support@prismbox.tools">support@prismbox.tools</a></div>
 </div></body></html>

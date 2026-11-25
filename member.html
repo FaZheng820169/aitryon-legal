@@ -2,57 +2,41 @@
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>会员服务协议 · AI 百宝箱</title><style>
-:root{--ink:#1a1d21;--ink2:#4a5058;--ink3:#878d95;--line:#e8eaed;--brand:#24508f}
+:root{--ink:#14161c;--ink2:#3d4453;--line:#e8eaed;--brand:#0a59f7;--warn:#b45309}
 *{box-sizing:border-box}
-body{margin:0;background:#fbfbfc;color:var(--ink);
-  font:400 15px/1.75 -apple-system,"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei",sans-serif;
-  -webkit-font-smoothing:antialiased}
-.wrap{max-width:720px;margin:0 auto;padding:56px 24px 96px}
-h1{font-size:26px;line-height:1.35;margin:0 0 6px;letter-spacing:-.2px}
-.meta{font-size:12.5px;color:var(--ink3);margin-bottom:36px}
-h2{font-size:15.5px;margin:34px 0 10px;color:var(--brand);font-weight:600;letter-spacing:.1px}
-p{margin:0 0 12px;color:var(--ink2)}
-.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:0 0 12px;
-  display:block;text-decoration:none;color:inherit;transition:.15s}
-.card:hover{border-color:#c8d3e3;transform:translateY(-1px)}
-.card b{display:block;font-size:15px;margin-bottom:3px}
-.card span{font-size:12.5px;color:var(--ink3)}
-.foot{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink3)}
-a{color:var(--brand)}
+body{margin:0;background:#fff;color:#14161c;
+  font:400 16px/1.8 -apple-system,"PingFang SC","HarmonyOS Sans SC",sans-serif}
+.wrap{max-width:660px;margin:0 auto;padding:40px 24px 80px}
+h1{font-size:28px;line-height:1.3;margin:0 0 8px;letter-spacing:-.3px}
+.meta{font-size:13px;color:#878d95;margin-bottom:28px}
+
+/* 目录 */
+.toc{background:#f7f8fa;border-radius:12px;padding:16px 20px;margin:0 0 36px}
+.toc-title{font-size:13px;color:#878d95;margin-bottom:10px;font-weight:500}
+.toc a{display:block;padding:7px 0;font-size:15px;color:#0a59f7;text-decoration:none;line-height:1.5}
+.toc a:hover{text-decoration:underline}
+
+/* 章节 */
+section{border-top:1px solid #eef0f3;padding-top:28px;margin-top:32px}
+section:first-of-type{border-top:none;padding-top:0;margin-top:0}
+h2{font-size:19px;line-height:1.45;margin:0 0 14px;font-weight:600;color:#14161c;
+   scroll-margin-top:20px}
+h2 .num{color:#0a59f7;margin-right:6px}
+p{margin:0 0 14px;color:#3d4453;line-height:1.85}
+p:last-child{margin-bottom:0}
+strong{color:#14161c;font-weight:600}
+
+/* 强调块：用于「不收集数据」这类关键结论 */
+.key{background:#f0f6ff;border-left:3px solid #0a59f7;padding:12px 16px;
+  border-radius:0 8px 8px 0;margin:0 0 16px;color:#1a2b4a}
+.key p{margin:0;color:#1a2b4a}
+
+.foot{margin-top:56px;padding-top:20px;border-top:1px solid #eef0f3;
+  font-size:13px;color:#878d95;line-height:1.7}
+.foot a{color:#0a59f7}
+@media(max-width:480px){.wrap{padding:28px 18px 60px}h1{font-size:24px}h2{font-size:17px}}
 </style></head>
 <body><div class="wrap">
-<h1>会员服务协议</h1><div class="meta">最近更新：2026 年 11 月 · 版本 v8</div>
-<h2>1. 这是什么</h2>
-<p>本应用的付费权益采用一次性买断制：支付应用内付费页所示价格后，永久解锁当前版本已有的全部功能与内置素材，不再有到期、续费或再次扣款。</p>
-<h2>2. 买断包含什么</h2>
-<p>· 试衣与换发型两个工具的全部功能；</p>
-<p>· 当前版本内置的全部衣库与发型库素材，可全部选用（具体数量以应用内付费页展示为准）；</p>
-<p>· 自定义上传图片与生成次数不再受限。</p>
-<p>不包含：AI 模型调用服务——生成所需的服务商接口与费用仍由你自己配置、自行结算，本应用不代收也不代付。</p>
-<p>不包含：今后版本新增的素材、工具或功能。新增内容可能单独收费或另行提供，届时会在应用内提前告知。</p>
-<h2>3. 免费体验与买断的差别</h2>
-<p>· 免费：内置衣库 / 发型库各仅 1 件可用，自定义上传各 1 张、各 1 次；</p>
-<p>· 买断：全部内置素材可选，自定义上传与生成次数不再计入配额。</p>
-<p>两条路径产出的成品图完全一致，都带法定的「AI 生成」标识。买断不改变图片质量——画质取决于你配置的模型。</p>
-<h2>4. 一次付费，不自动续费</h2>
-<p>本商品为华为应用市场的非消耗型商品，一次购买、永久有效。不存在自动续费，不存在到期扣款，也不需要取消订阅。</p>
-<h2>5. 退款</h2>
-<p>退款按华为应用市场的规则与流程处理（华为应用市场 → 我的 → 订单 → 申请退款）。本应用不直接受理支付与退款，也无法代你发起。</p>
-<p>订单被撤销或退款后，本应用内的解锁状态会在下次联网启动时同步失效。</p>
-<h2>6. 换机与恢复</h2>
-<p>买断记录绑定你的华为账号，保存在华为应用市场侧。换机或卸载重装后，用同一华为账号启动应用会自动恢复；也可以在付费墙点「恢复购买」手动找回。</p>
-<p>免费体验额度是纯本机的，不随账号迁移，重装后会重新计算。</p>
-<h2>7. 注销账号</h2>
-<p>如果你在应用内注销账号，我们会删除你在本应用内的数据（生成记录、配置、偏好等）。</p>
-<p>买断权益不因注销而消失：该记录由华为应用市场保留、仍绑定你的华为账号，重新启动或重新登录后可恢复。</p>
-<p>注销不等于退款。如需退款，请通过华为应用市场的订单页申请。</p>
-<h2>8. 权益边界</h2>
-<p>· 买断是个人使用授权，不得转售、出租、共享或代他人批量生成；</p>
-<p>· 内置素材的权利归开发者，即便已买断，生成的成品图仍仅限个人非商业使用（见《用户协议》第 6 条）；</p>
-<p>· 因你自行配置的服务商欠费、限流、停止服务导致的生成失败，不属于本服务范围，不作为退款依据。</p>
-<h2>9. 变更与后续内容</h2>
-<p>你买断的是「购买时版本已上线的功能与素材」的永久使用权：这部分不会另行收费，也不会因为版本更新向你二次收费。</p>
-<p>素材库可能因版权到期、原作者要求下架等原因调整个别素材。如发生较大范围的调整，我们会以新增素材或等值补偿的方式补足，不会让已购买用户的实际可用内容明显减少。</p>
-<p>购买之后新增的功能、素材、服务（例如新的衣库主题、新工具、云端同步等）属于新内容，可能单独收费或采用订阅制。不购买这些新内容，不影响你已买断部分的正常使用。</p>
-<div class="foot">AI 百宝箱 · 本页版本 v8 · 如有疑问请联系 <a href="mailto:support@prismbox.tools">support@prismbox.tools</a></div>
+<h1>会员服务协议</h1><div class="meta">最近更新：2026 年 11 月 · 版本 v8</div><div class="toc"><div class="toc-title">目录</div><a href="#s0">1. 这是什么</a><a href="#s1">2. 买断包含什么</a><a href="#s2">3. 免费体验与买断的差别</a><a href="#s3">4. 一次付费，不自动续费</a><a href="#s4">5. 退款</a><a href="#s5">6. 换机与恢复</a><a href="#s6">7. 注销账号</a><a href="#s7">8. 权益边界</a><a href="#s8">9. 变更与后续内容</a></div><section><h2 id="s0"><span class="num">1.</span>这是什么</h2><p>本应用的付费权益采用一次性买断制：支付应用内付费页所示价格后，永久解锁当前版本已有的全部功能与内置素材，不再有到期、续费或再次扣款。</p></section><section><h2 id="s1"><span class="num">2.</span>买断包含什么</h2><p>· 试衣与换发型两个工具的全部功能；</p><p>· 当前版本内置的全部衣库与发型库素材，可全部选用（具体数量以应用内付费页展示为准）；</p><p>· 自定义上传图片与生成次数不再受限。</p><p>不包含：AI 模型调用服务——生成所需的服务商接口与费用仍由你自己配置、自行结算，本应用不代收也不代付。</p><p>不包含：今后版本新增的素材、工具或功能。新增内容可能单独收费或另行提供，届时会在应用内提前告知。</p></section><section><h2 id="s2"><span class="num">3.</span>免费体验与买断的差别</h2><p>· 免费：内置衣库 / 发型库各仅 1 件可用，自定义上传各 1 张、各 1 次；</p><p>· 买断：全部内置素材可选，自定义上传与生成次数不再计入配额。</p><p>两条路径产出的成品图完全一致，都带法定的「AI 生成」标识。买断不改变图片质量——画质取决于你配置的模型。</p></section><section><h2 id="s3"><span class="num">4.</span>一次付费，不自动续费</h2><p>本商品为华为应用市场的非消耗型商品，一次购买、永久有效。不存在自动续费，不存在到期扣款，也不需要取消订阅。</p></section><section><h2 id="s4"><span class="num">5.</span>退款</h2><p>退款按华为应用市场的规则与流程处理（华为应用市场 → 我的 → 订单 → 申请退款）。本应用不直接受理支付与退款，也无法代你发起。</p><p>订单被撤销或退款后，本应用内的解锁状态会在下次联网启动时同步失效。</p></section><section><h2 id="s5"><span class="num">6.</span>换机与恢复</h2><p>买断记录绑定你的华为账号，保存在华为应用市场侧。换机或卸载重装后，用同一华为账号启动应用会自动恢复；也可以在付费墙点「恢复购买」手动找回。</p><p>免费体验额度是纯本机的，不随账号迁移，重装后会重新计算。</p></section><section><h2 id="s6"><span class="num">7.</span>注销账号</h2><p>如果你在应用内注销账号，我们会删除你在本应用内的数据（生成记录、配置、偏好等）。</p><p>买断权益不因注销而消失：该记录由华为应用市场保留、仍绑定你的华为账号，重新启动或重新登录后可恢复。</p><p>注销不等于退款。如需退款，请通过华为应用市场的订单页申请。</p></section><section><h2 id="s7"><span class="num">8.</span>权益边界</h2><p>· 买断是个人使用授权，不得转售、出租、共享或代他人批量生成；</p><p>· 内置素材的权利归开发者，即便已买断，生成的成品图仍仅限个人非商业使用（见《用户协议》第 6 条）；</p><p>· 因你自行配置的服务商欠费、限流、停止服务导致的生成失败，不属于本服务范围，不作为退款依据。</p></section><section><h2 id="s8"><span class="num">9.</span>变更与后续内容</h2><p>你买断的是「购买时版本已上线的功能与素材」的永久使用权：这部分不会另行收费，也不会因为版本更新向你二次收费。</p><p>素材库可能因版权到期、原作者要求下架等原因调整个别素材。如发生较大范围的调整，我们会以新增素材或等值补偿的方式补足，不会让已购买用户的实际可用内容明显减少。</p><p>购买之后新增的功能、素材、服务（例如新的衣库主题、新工具、云端同步等）属于新内容，可能单独收费或采用订阅制。不购买这些新内容，不影响你已买断部分的正常使用。</p></section>
+<div class="foot">AI 百宝箱 · 版本 v8<br>如有疑问请联系 <a href="mailto:support@prismbox.tools">support@prismbox.tools</a></div>
 </div></body></html>
